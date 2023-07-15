@@ -13,7 +13,7 @@ async def generate_selector(
     second: int,
     select_value: Literal["h", "m", "s"],
     actions_class: type[FullTimePickerAction] | type[CarouselTimePickerAction],
-    callback_class: type[FullTimePickerCallback] | type[CarouselTimePickerAction]
+    callback_class: type[FullTimePickerCallback] | type[CarouselTimePickerCallback]
 ):
     match select_value:
         case "h":
